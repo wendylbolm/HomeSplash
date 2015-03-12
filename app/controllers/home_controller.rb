@@ -4,13 +4,13 @@ class HomeController < ApplicationController
     
     @greet_message = case Time.now.hour
     when 5..11
-      "Good Mernin"
+      "Time for Coffee! <i class='fa fa-coffee'></i>".html_safe
     when 12..15
-      "Good Afternoon, SUCKA"
+      "Art harder, Motherfucker! <i class='fa fa-pencil'></i>".html_safe
     when 16..19
-      "Buenos AFTERNOONAS"
+      "Rock out! <i class='fa fa-music'></i>".html_safe
     when 20..23
-      "Gnight!"
+      "Sweet dreams. <i class='fa fa-moon-o'></i>".html_safe
     end
   end
 end

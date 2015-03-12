@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ **
+ *= require font-awesome
+ *= require_tree .
+ *= require_self
+ */
+html {
+  font-family: "American Typewriter", Arial, Verdana;
+  font-size: 20px;
+  color: #660066;
+
+
+}
+
+body {
+  background: image-url("mexicowendy.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  padding: 0;
+  margin: 0;
+}
+
+.shadowed {
+  text-shadow: 2px 2px 0 #000;
+}
+
+div#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  height: 2em;
+  padding-top: 1em;
+  color: #FFCCFF;
+  left: 0;
+}
+
+div#footer a {
+  text-decoration: none;
+  color: #FFCCFF;
+}
