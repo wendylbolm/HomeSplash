@@ -12,5 +12,21 @@
   #clock {
   font-family: "American Typewriter", Arial, Verdana;
   font-size: 4em;
-  color: #660066;
+  color: #e0f2f6;
+  }
+
+  #quote {
+  bottom: 5em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+
+  &:before {
+  content: open-quote;
+  }
+
+  &:after {
+  content: close-quote;
+  }
   }

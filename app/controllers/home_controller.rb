@@ -12,5 +12,6 @@ class HomeController < ApplicationController
     when 20..23
       "Sweet dreams. <i class='fa fa-moon-o'></i>".html_safe
     end
+    @quip = Quote.all.sample.quip
   end
 end
